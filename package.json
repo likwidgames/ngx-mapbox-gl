@@ -10,7 +10,7 @@
     "update-version": "./update_version.sh",
     "deploy-showcase": "nx build showcase --base-href '/ngx-mapbox-gl/' && cp dist/apps/showcase/index.html dist/apps/showcase/404.html && gh-pages -d dist/apps/showcase",
     "commit": "lint-staged --relative && cz --no-verify",
-    "postinstall": "node_modules/.bin/husky-run install"
+    "postinstall": "husky install"
   },
   "standard-version": {
     "scripts": {
